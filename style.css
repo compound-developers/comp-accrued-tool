@@ -1,0 +1,15 @@
+html {
+  font-family: Arial;
+  text-align: center;
+}
+
+body {
+  max-width: 600px;
+  margin: auto;
+}
+
+input[type=text] {
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}

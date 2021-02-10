@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="./style.css" />
+  <title>Get My COMP Accrued</title>
+</head>
+<body>
+
+  <h1>How much COMP has my account accrued?</h1>
+
+  <p>
+    If you have an open supply or borrow, <a href="https://medium.com/compound-finance/expanding-compound-governance-ce13fcd4fe36"  target="_blank">COMP token</a> is dripped to your account <a href="https://compound.finance/governance/comp"  target="_blank">based on your usage amount</a>. The token is not transferred to your address until you call the <a href="https://compound.finance/docs/comptroller#claim-comp"  target="_blank">claimComp</a> method or use <a href="https://app.compound.finance/vote"  target="_blank">the interface</a>.
+  </p>
+
+  <input type="text" id="address" placeholder="0xmyAddress" />
+  <br />
+  <br />
+  <input type="submit" id="submit" value="Get COMP Accrued"/>
+  
+  <h3 id="output"></h3>
+
+</body>
+
+<script type="text/javascript" src="./app.js"></script>
+
+</html>
