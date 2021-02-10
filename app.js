@@ -7,11 +7,11 @@ submit.onclick = () => {
     const addr = address.value;
     fetch('https://api.compound.finance/api/v2/governance/comp/account?address=' + addr)
       .then(response => response.json())
-      .then(({ markets }) => {
+      .then((data) => {
         try {
           let compAllocated = 0;
           let compDistributed = 0;
-          markets.forEach(({ comp_allocated, comp_distributed }) => {
+          data.markets.forEach(({ comp_allocated, comp_distributed }) => {
             compAllocated += +comp_allocated;
             compDistributed += +comp_distributed;
           });
